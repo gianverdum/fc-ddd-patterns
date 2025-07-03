@@ -4,14 +4,14 @@ import Customer from "./customer";
 describe("Customer unit tests", () => {
 
     it("should throw error when ID is empty", () => {
-        
+        //Arrange & Act & Assert
         expect(() => {
             let customer = new Customer("", "John Doe");
         }).toThrow("ID is required.");
     });
 
     it("should throw error when name is empty", () => {
-        
+        //Arrange & Act & Assert
         expect(() => {
             let customer = new Customer("123", "");
         }).toThrow("Name is required.");
