@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "test": "jest"
+    "test": "npm run tsc -- --noEmit && jest",
+    "tsc": "tsc"
   },
   "devDependencies": {
     "@swc/cli": "^0.7.7",
