@@ -105,4 +105,14 @@ describe("Product repository unit tests", () => {
         // Assert
         expect(products).toEqual(foundProducts);
     });
+
+    it("should throw an error when product not found", async () => {
+        // Arrange
+        const productRepository = new ProductRepository();
+        
+        // Act & Assert
+        await expect(productRepository.find("non-existing-id"))
+            .rejects
+            .toThrow("Product with id non-existing-id not found");
+    });
 });

@@ -23,6 +23,6 @@ export default class OrderItem {
     }
 
     orderItemTotal(): number {
-        return this._price * this._quantity;
+        return this.price * this.quantity;
     }
 }
