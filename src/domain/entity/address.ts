@@ -13,22 +13,38 @@ export default class Address {
         this.validate();
     }
 
+    get street(): string {
+        return this._street;
+    }
+
+    get number(): number {
+        return this._number;
+    }
+
+    get zip(): string {
+        return this._zip;
+    }
+
+    get city(): string {
+        return this._city;
+    }
+
     validate() {
-        if (this._street.length === 0) {
+        if (this.street.length === 0) {
             throw new Error("Street is required.");
         }
-        if (this._number <= 0) {
+        if (this.number <= 0) {
             throw new Error("Number must be greater than zero.");
         }
-        if (this._zip.length === 0) {
+        if (this.zip.length === 0) {
             throw new Error("Zip is required.");
         }
-        if (this._city.length === 0) {
+        if (this.city.length === 0) {
             throw new Error("City is required.");
         }
     }
 
     toString(): string {
-        return `${this._street}, ${this._number}, ${this._zip}, ${this._city}`;
+        return `${this.street}, ${this.number}, ${this.zip}, ${this.city}`;
     }
 }
