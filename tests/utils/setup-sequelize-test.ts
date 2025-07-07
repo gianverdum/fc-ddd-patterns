@@ -1,22 +1,17 @@
 import { Sequelize } from "sequelize-typescript";
+import { setupAssociations } from "src/infrastructure/db/sequelize/associations";
 
-export const setupSequelizeTest = (models: any[]) => {
-    let sequelize: Sequelize;
+export async function setupSequelizeTest(models: any[]): Promise<Sequelize> {
+  const sequelize = new Sequelize({
+    dialect: "sqlite",
+    storage: ":memory:",
+    logging: false,
+    sync: { force: true },
+  });
 
-    beforeEach(async () => {
-        sequelize = new Sequelize({
-            dialect: "sqlite",
-            storage: ":memory:",
-            logging: false,
-            sync: { force: true }
-        });
-        sequelize.addModels(models);
-        await sequelize.sync();
-    });
+  sequelize.addModels(models);
+  setupAssociations();
+  await sequelize.sync();
 
-    afterEach(async () => {
-        await sequelize.close();
-    });
-
-    return () => sequelize;
-};
+  return sequelize;
+}

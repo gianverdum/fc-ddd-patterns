@@ -22,14 +22,12 @@ export default class OrderItemModel extends Model {
     @Column({ allowNull: false })
     declare product_id: string;
 
-    @BelongsTo(() => ProductModel)
     declare product: ProductModel;
 
     @ForeignKey(() => OrderModel)
     @Column({ allowNull: false })
     declare order_id: string;
 
-    @BelongsTo(() => OrderModel)
     declare order: OrderModel;
 
     @Column({ allowNull: false })

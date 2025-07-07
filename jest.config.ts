@@ -11,6 +11,10 @@ const config: Config = {
   collectCoverage: true,
   coverageDirectory: 'coverage',
   verbose: true,
+  moduleNameMapper: {
+    '^src/(.*)$': '<rootDir>/src/$1',
+    '^@tests/(.*)$': '<rootDir>/tests/$1',
+  },
 };
 
 export default config;
