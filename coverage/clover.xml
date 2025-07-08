@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1752007857172" clover="3.2.0">
-  <project timestamp="1752007857173" name="All files">
-    <metrics statements="235" coveredstatements="231" conditionals="46" coveredconditionals="41" methods="85" coveredmethods="82" elements="366" coveredelements="354" complexity="0" loc="235" ncloc="235" packages="16" files="24" classes="24"/>
+<coverage generated="1752008841286" clover="3.2.0">
+  <project timestamp="1752008841287" name="All files">
+    <metrics statements="237" coveredstatements="233" conditionals="46" coveredconditionals="41" methods="86" coveredmethods="83" elements="369" coveredelements="357" complexity="0" loc="237" ncloc="237" packages="16" files="25" classes="25"/>
     <package name="src.domain.@shared.event">
       <metrics statements="15" coveredstatements="15" conditionals="8" coveredconditionals="4" methods="6" coveredmethods="6"/>
       <file name="event-dispatcher.ts" path="/home/gianverdum/projects/fullcycle/ddd/hands-on/src/domain/@shared/event/event-dispatcher.ts">
@@ -122,19 +122,24 @@
       </file>
       <file name="customer-created.event.ts" path="/home/gianverdum/projects/fullcycle/ddd/hands-on/src/domain/customer/event/customer-created.event.ts">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="1" count="1" type="stmt"/>
-        <line num="6" count="1" type="stmt"/>
-        <line num="7" count="1" type="stmt"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="7" count="2" type="stmt"/>
       </file>
     </package>
     <package name="src.domain.customer.event.handler">
-      <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+      <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
       <file name="send-email-when-customer-change-address.handler.ts" path="/home/gianverdum/projects/fullcycle/ddd/hands-on/src/domain/customer/event/handler/send-email-when-customer-change-address.handler.ts">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="4" count="1" type="stmt"/>
         <line num="6" count="1" type="stmt"/>
       </file>
       <file name="send-email-when-customer-is-created.handler.ts" path="/home/gianverdum/projects/fullcycle/ddd/hands-on/src/domain/customer/event/handler/send-email-when-customer-is-created.handler.ts">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+      </file>
+      <file name="send-email-when-customer-is-created.handler2.ts" path="/home/gianverdum/projects/fullcycle/ddd/hands-on/src/domain/customer/event/handler/send-email-when-customer-is-created.handler2.ts">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="4" count="1" type="stmt"/>
         <line num="6" count="1" type="stmt"/>
