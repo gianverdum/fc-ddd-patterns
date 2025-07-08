@@ -1,5 +1,5 @@
 import { Sequelize } from "sequelize-typescript";
-import { setupAssociations } from "src/infrastructure/db/sequelize/associations";
+import { setupAssociations } from "src/infrastructure/associations";
 
 export async function setupSequelizeTest(models: any[]): Promise<Sequelize> {
   const sequelize = new Sequelize({
