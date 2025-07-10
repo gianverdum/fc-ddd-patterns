@@ -1,43 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1752158718531" clover="3.2.0">
-  <project timestamp="1752158718531" name="All files">
-    <metrics statements="20" coveredstatements="14" conditionals="8" coveredconditionals="2" methods="8" coveredmethods="5" elements="36" coveredelements="21" complexity="0" loc="20" ncloc="20" packages="3" files="3" classes="3"/>
-    <package name="@shared.event">
-      <metrics statements="15" coveredstatements="9" conditionals="8" coveredconditionals="2" methods="6" coveredmethods="3"/>
-      <file name="event-dispatcher.ts" path="/home/gianverdum/projects/fullcycle/ddd/hands-on/src/domain/@shared/event/event-dispatcher.ts">
-        <metrics statements="15" coveredstatements="9" conditionals="8" coveredconditionals="2" methods="6" coveredmethods="3"/>
-        <line num="5" count="1" type="stmt"/>
-        <line num="6" count="1" type="stmt"/>
-        <line num="9" count="0" type="stmt"/>
-        <line num="13" count="1" type="cond" truecount="1" falsecount="1"/>
-        <line num="14" count="1" type="stmt"/>
-        <line num="16" count="1" type="stmt"/>
-        <line num="19" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="20" count="0" type="stmt"/>
-        <line num="21" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="22" count="0" type="stmt"/>
-        <line num="27" count="0" type="stmt"/>
-        <line num="30" count="1" type="stmt"/>
-        <line num="31" count="1" type="cond" truecount="1" falsecount="1"/>
-        <line num="32" count="1" type="stmt"/>
-        <line num="33" count="1" type="stmt"/>
+<coverage generated="1752171961612" clover="3.2.0">
+  <project timestamp="1752171961612" name="All files">
+    <metrics statements="46" coveredstatements="6" conditionals="15" coveredconditionals="1" methods="15" coveredmethods="1" elements="76" coveredelements="8" complexity="0" loc="46" ncloc="46" packages="2" files="3" classes="3"/>
+    <package name="entity">
+      <metrics statements="38" coveredstatements="0" conditionals="12" coveredconditionals="0" methods="14" coveredmethods="0"/>
+      <file name="product-b.ts" path="/home/gianverdum/projects/fullcycle/ddd/hands-on/src/domain/product/entity/product-b.ts">
+        <metrics statements="19" coveredstatements="0" conditionals="6" coveredconditionals="0" methods="7" coveredmethods="0"/>
+        <line num="3" count="0" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="13" count="0" type="stmt"/>
+        <line num="17" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="20" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="21" count="0" type="stmt"/>
+        <line num="23" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="24" count="0" type="stmt"/>
+        <line num="26" count="0" type="stmt"/>
+        <line num="30" count="0" type="stmt"/>
+        <line num="34" count="0" type="stmt"/>
+        <line num="38" count="0" type="stmt"/>
+        <line num="42" count="0" type="stmt"/>
+        <line num="43" count="0" type="stmt"/>
+        <line num="47" count="0" type="stmt"/>
+        <line num="48" count="0" type="stmt"/>
+      </file>
+      <file name="product.ts" path="/home/gianverdum/projects/fullcycle/ddd/hands-on/src/domain/product/entity/product.ts">
+        <metrics statements="19" coveredstatements="0" conditionals="6" coveredconditionals="0" methods="7" coveredmethods="0"/>
+        <line num="3" count="0" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="13" count="0" type="stmt"/>
+        <line num="17" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="20" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="21" count="0" type="stmt"/>
+        <line num="23" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="24" count="0" type="stmt"/>
+        <line num="26" count="0" type="stmt"/>
+        <line num="30" count="0" type="stmt"/>
+        <line num="34" count="0" type="stmt"/>
+        <line num="38" count="0" type="stmt"/>
+        <line num="42" count="0" type="stmt"/>
+        <line num="43" count="0" type="stmt"/>
+        <line num="47" count="0" type="stmt"/>
+        <line num="48" count="0" type="stmt"/>
       </file>
     </package>
-    <package name="customer.event">
-      <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-      <file name="customer-created.event.ts" path="/home/gianverdum/projects/fullcycle/ddd/hands-on/src/domain/customer/event/customer-created.event.ts">
-        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+    <package name="factory">
+      <metrics statements="8" coveredstatements="6" conditionals="3" coveredconditionals="1" methods="1" coveredmethods="1"/>
+      <file name="product.factory.ts" path="/home/gianverdum/projects/fullcycle/ddd/hands-on/src/domain/product/factory/product.factory.ts">
+        <metrics statements="8" coveredstatements="6" conditionals="3" coveredconditionals="1" methods="1" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
-        <line num="6" count="1" type="stmt"/>
-        <line num="7" count="1" type="stmt"/>
-      </file>
-    </package>
-    <package name="customer.event.handler">
-      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-      <file name="send-email-when-customer-is-created.handler2.ts" path="/home/gianverdum/projects/fullcycle/ddd/hands-on/src/domain/customer/event/handler/send-email-when-customer-is-created.handler2.ts">
-        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="2" count="1" type="stmt"/>
         <line num="4" count="1" type="stmt"/>
         <line num="6" count="1" type="stmt"/>
+        <line num="8" count="1" type="cond" truecount="1" falsecount="2"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
       </file>
     </package>
   </project>
