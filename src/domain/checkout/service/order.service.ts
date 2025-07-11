@@ -1,4 +1,4 @@
-import Customer from 'src/domain/customer/entity/customer';
+import Customer from '@src/domain/customer/entity/customer';
 import { v4 as uuid } from 'uuid';
 import OrderItem from '../entity/order_item';
 import Order from '../entity/order';

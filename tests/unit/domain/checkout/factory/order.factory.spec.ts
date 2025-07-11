@@ -1,5 +1,6 @@
+import OrderFactory from "@src/domain/checkout/factory/order.factory";
 import { v4 as uuid } from "uuid";
-import OrderFactory from "./order.factory";
+
 
 describe("Oder factory unit tests", () => {
     it("should create an order", () => {

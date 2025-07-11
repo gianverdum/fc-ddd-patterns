@@ -1,4 +1,4 @@
-import RepositoryInterface from "src/domain/@shared/repository/repository-interface";
+import RepositoryInterface from "@src/domain/@shared/repository/repository-interface";
 import Customer from "../entity/customer";
 
 
