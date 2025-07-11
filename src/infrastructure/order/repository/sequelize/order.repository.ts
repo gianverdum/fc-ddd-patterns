@@ -1,8 +1,8 @@
-import Order from "src/domain/checkout/entity/order";
+import Order from "@src/domain/checkout/entity/order";
+import OrderRepositoryInterface from "@src/domain/checkout/repository/order-repository.interface";
 import OrderModel from "./order.model";
 import OrderItemModel from "./order-item.model";
-import OrderRepositoryInterface from "src/domain/checkout/repository/order-repository.interface";
-import OrderItem from "src/domain/checkout/entity/order_item";
+import OrderItem from "@src/domain/checkout/entity/order_item";
 
 export default class OrderRepository implements OrderRepositoryInterface {
     

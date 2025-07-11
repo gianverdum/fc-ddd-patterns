@@ -1,6 +1,6 @@
-import SendEmailWhenCustomerIsCreatedHandler from "./send-email-when-customer-is-created.handler";
-import CustomerCreatedEvent from "../customer-created.event";
-import EventDispatcher from "src/domain/@shared/event/event-dispatcher";
+import EventDispatcher from "@src/domain/@shared/event/event-dispatcher";
+import CustomerCreatedEvent from "@src/domain/customer/event/customer-created.event";
+import SendEmailWhenCustomerIsCreatedHandler from "@src/domain/customer/event/handler/send-email-when-customer-is-created.handler";
 
 describe("SendEmailWhenCustomerIsCreatedHandler unit tests", () => {
   it("should log customer creation event", () => {

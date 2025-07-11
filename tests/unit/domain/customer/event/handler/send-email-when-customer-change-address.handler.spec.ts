@@ -1,6 +1,6 @@
-import SendEmailWhenCustomerChangeAddressHandler from "./send-email-when-customer-change-address.handler";
-import CustomerChangedAddressEvent from "../customer-changed-address.event";
-import EventDispatcher from "src/domain/@shared/event/event-dispatcher";
+import EventDispatcher from "@src/domain/@shared/event/event-dispatcher";
+import CustomerChangedAddressEvent from "@src/domain/customer/event/customer-changed-address.event";
+import SendEmailWhenCustomerChangeAddressHandler from "@src/domain/customer/event/handler/send-email-when-customer-change-address.handler";
 
 describe("SendEmailWhenCustomerChangeAddressHandler unit tests", () => {
   it("should log customer address change event", () => {

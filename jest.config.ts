@@ -7,13 +7,13 @@ const config: Config = {
     '^.+\\.(t|j)sx?$': ['@swc/jest', {}],
   },
   moduleFileExtensions: ['ts', 'js', 'json'],
-  testMatch: ['/**/*.spec.ts'],
+  testMatch: ['**/*.spec.ts'],
   collectCoverage: true,
   coverageDirectory: 'coverage',
   verbose: true,
   moduleNameMapper: {
-    '^src/(.*)$': '<rootDir>/src/$1',
-    '^@tests/(.*)$': '<rootDir>/tests/$1',
+    '^@src/(.*)$': '<rootDir>/src/$1',
+    '^@tests/(.*)$': '<rootDir>/tests/$1'
   },
 };
 

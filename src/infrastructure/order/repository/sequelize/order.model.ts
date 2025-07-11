@@ -1,3 +1,4 @@
+import CustomerModel from '@src/infrastructure/customer/repository/sequelize/customer.model';
 import {
     Table,
     Model,
@@ -5,9 +6,7 @@ import {
     Column,
     ForeignKey,
 } from 'sequelize-typescript';
-import CustomerModel from '../../../customer/repository/sequelize/customer.model';
 import OrderItemModel from './order-item.model';
-
 
 @Table({
     tableName: 'orders',
